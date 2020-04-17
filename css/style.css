@@ -49,12 +49,25 @@ td {
   font-size: 20px;
   font-family: google_sans;
 }
-
+.daero_title {
+  padding-left: 10px;
+  color: white;
+  font-size: 30px;
+  font-family: comfortaa;
+}
 @media only screen and (max-width: 720px) {
   .page-title {
     font-size: 30px;
   }
   td {
-    font-size: 15px;
+    color: white;
+    font-size: 17px;
+    font-family: google_sans;
+  }
+  .daero_title {
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: comfortaa;
   }
 }
