@@ -1,4 +1,15 @@
-* {
+body,
+html {
   margin: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4x 8px 0 grey;
+}
+.element {
+  font-family: sans-serif;
+  font-size: 20px;
 }
