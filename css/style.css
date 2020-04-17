@@ -4,12 +4,26 @@ html {
   font-family: sans-serif;
   box-sizing: border-box;
 }
-.navbar {
+.content {
   width: 100%;
-  box-shadow: 0 4x 8px 0 grey;
-  background: yellowgreen;
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+  background-position: fixed;
 }
-.element {
-  font-family: sans-serif;
-  font-size: 20px;
+.text {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .content {
+    background-size: 350%;
+  }
 }
