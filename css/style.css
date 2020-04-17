@@ -54,4 +54,7 @@ td {
   .page-title {
     font-size: 30px;
   }
+  td {
+    font-size: 15px;
+  }
 }
