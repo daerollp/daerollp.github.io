@@ -44,6 +44,11 @@ a:hover {
   font-family: comfortaa;
   text-align: center;
 }
+td {
+  color: white;
+  font-size: 20px;
+  font-family: google_sans;
+}
 
 @media only screen and (max-width: 720px) {
   .page-title {
