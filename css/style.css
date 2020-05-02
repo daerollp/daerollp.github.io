@@ -5,6 +5,7 @@ html {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+    
 }
 @font-face {
   src: url("../fonts/google/google_sans.ttf");
@@ -17,15 +18,20 @@ html {
 body,
 html {
   margin: 0;
+    background-color: #212121;
 }
 .nav {
-  font-family: google;
+  font-family: comfortaa;
   overflow: hidden;
-  background: black;
+  background: #000000;
   padding: 20px;
+   
+    width: 100%;
+        color:white;
+    font-size: 40px;
 }
 .nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
@@ -38,7 +44,7 @@ a:hover {
 }
 .page-title {
   text-align: center;
-  font-family: google_sans;
+  font-family: google sans;
   font-size: 50px;
 }
 .text {
@@ -49,19 +55,19 @@ a:hover {
 td {
   color: white;
   font-size: 20px;
-  font-family: google_sans;
+  font-family: google sans;
 }
 .daero_title {
   padding-left: 10px;
-  color: white;
+  color: #ffffff;
   font-size: 30px;
   font-family: comfortaa;
 }
 .container-l{
-    text-align: left;
+    text-align: justify;
 }
 .container-r{
-    text-align: right;
+    text-align: justify;
 }
 @media only screen and (max-width: 720px) {
   .page-title {
@@ -70,11 +76,11 @@ td {
   td {
     color: white;
     font-size: 17px;
-    font-family: google_sans;
+    font-family: google sans;
   }
   .daero_title {
     padding-left: 10px;
-    color: white;
+    color: #ffffff;
     font-size: 25px;
     font-family: comfortaa;
   }
