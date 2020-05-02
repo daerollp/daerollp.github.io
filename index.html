@@ -1,79 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="We are Daero" />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="DAERO" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <title>Daero</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="nav"> 
-      <table width="100%">
-        <tr>
-          <td align="left" class="daero_title">
-            Daero
-          </td>
-          <td align="center" style="width: 120px;">
-            <a href="#">About</a>
-          </td>
-          <td align="center" style="width: 90px;">
-            <a href="#">Services</a>
-          </td>
-          <td align="center" style="width: 90px;">
-            <a href="#">Help</a>
-          </td>
-        </tr>
-      </table>
+
+    <style>
+        body {
+            background-color: #100e17;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            position: absolute;
+            height: 300px;
+            width: 600px;
+            top: 150px;
+            left: calc(50% - 300px);
+            display: flex;
+        }
+        .container-big {
+            position: absolute;
+            height: 600px;
+            width: 600px;
+            top: 50px;
+            left: calc(50% - 300px);
+            display: flex;
+        }
+        
+        
+
+        .card {
+            display: flex;
+            height: 280px;
+            width: 200px;
+            background-color: #17141d;
+            border-radius: 10px;
+            box-shadow: -1rem 0 3rem #000;
+            /*   margin-left: -50px; */
+            transition: 0.4s ease-out;
+            position: relative;
+            left: 0px;
+            user-select: none;
+        }
+
+        .card:not(:first-child) {
+            margin-left: -50px;
+        }
+
+        .card:hover {
+            transform: translateY(-20px);
+            transition: 0.4s ease-out;
+        }
+
+        .card:hover~.card {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+        }
+
+        .title {
+            color: white;
+            font-weight: 300;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            font-family: comfortaa;
+        }
+
+        .text-container {
+            color: white;
+            font-weight: 300;
+            position: absolute;
+            left: 20px;
+            top: 70px;
+            font-family: comfortaa;
+            user-select: none;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+
+        <center><b>Daero</b></center>
+
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3 class="title">About</h3>
+            <div class="text-container">Daero is a team of hardworking people, dedicated to quality
+                <br><br><br><br><br><br><br>
+                <a href="about/" style="text-decoration:none;">Learn more</a>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">Services</h3>
+            <div class="text-container">Our web application and static websites are a model of quality and immense hardwork.
+                <br><br><br><br><br>
+                <a href="services/" style="text-decoration:none;">Learn more</a>
+            </div>
+        </div>
+        <div class="card">
+            <h3 class="title">Team</h3>
+            <div class="text-container">We have a great team who are always in search of something awesome and create something WOW!
+                <br><br><br><br>
+                <a href="team/" style="text-decoration:none;">Learn more</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <h3 class="title">Contact</h3>
+            <div class="text-container">Get in touch with our team with only few clicks.
+                <br><br><br><br><br><br><br><br>
+                <a href="contact/" style="text-decoration:none;">Learn more</a>
+            </div>
+        </div>
     </div>
 
-    <section id="main" style="font-family: google_sans;">
-      <div class="container-l" style="font-family: google_sans;">
-        <article id="main-col">
-          <p class="text">
-            Daero
-          </p>
-        </article>
-          <b>Developing solutions for tomorrow</b><br><br>
-          Helping small businesses and organisations<br>
-          to go online with out unmatched services that<br>
-          stands out of the league.
-      </div>
-    </section>
-      <br><br><br><br>
-      <section id="main" style="font-family: google_sans;">
-      <div class="container-r" style="font-family: google_sans;">
-          <b>Developing to solve your problems</b><br><br>
-          Providing backend solutions for managing<br>small businesses and organisations with ease<br>with no extra management labours.
-      </div>
-    </section>
-      <br><br><br><br>
-      <section id="main" style="font-family: google_sans;">
-      <div class="container-l" style="font-family: google_sans;">
-          <b>Why pay for a development team?</b><br><br>
-          When you can have what you need with our<br>
-          high speed web development services. Just pay<br>
-          for what you get, no extra team management.
-      </div>
-    </section>
-      <br><br><br><br>
-      <section id="main" style="font-family: google_sans;">
-      <div class="container-r" style="font-family: google_sans;">
-          <b>Get it made by the professionals</b><br><br>
-          Beautiful, powerful, optimised and well managed<br>
-          web applications delivered to you, all thank to the<br>
-          dedicated team of developers that we have who <br>provide you with what you need right on time.
-      </div>
-    </section>
-      <br><br><br><br>
-      <section id="main" style="font-family: google_sans;">
-      <div class="container-l" style="font-family: google_sans;">
-          <b>Just few clicks and signs away from your powerful<br>and personalised web application for your business</b><br><br>
-          You don't need to have a development team to get<br>it built, we have all that just to ensure you get the <br>best services from our side. Just pure dedication <br>and hard work of team Daero :)
-      </div>
-    </section>
-      <br><br><br>
-  </body>
+
+
+</body>
+
 </html>
