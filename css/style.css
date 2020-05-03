@@ -3,7 +3,6 @@ html {
   margin: 0;
   font-family: sans-serif;
   box-sizing: border-box;
-    
 }
 @font-face {
   src: url("../fonts/google/google_sans.ttf");
@@ -16,17 +15,17 @@ html {
 body,
 html {
   margin: 0;
-    background-color: #212121;
+  background-color: #212121;
 }
 .nav {
   font-family: comfortaa;
   overflow: hidden;
   background: #000000;
   padding: 20px;
-   position: fixed;
-    width: 100%;
-        color:white;
-    font-size: 40px;
+  position: fixed;
+  width: 100%;
+  color: white;
+  font-size: 40px;
 }
 .nav a {
   color: #ffffff;
@@ -49,6 +48,7 @@ a:hover {
   font-size: 50px;
   font-family: comfortaa;
   text-align: center;
+  color: white;
 }
 td {
   color: white;
@@ -61,11 +61,11 @@ td {
   font-size: 30px;
   font-family: comfortaa;
 }
-.container-l{
-    text-align: justify;
+.container-l {
+  text-align: justify;
 }
-.container-r{
-    text-align: justify;
+.container-r {
+  text-align: justify;
 }
 @media only screen and (max-width: 720px) {
   .page-title {
