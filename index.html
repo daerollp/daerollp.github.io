@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        $("#card1").removeClass("card");
+        $("#card1").addClass("cardm");
+      }
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="We are Daero" />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="DAERO" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400"
       rel="stylesheet"
@@ -42,6 +54,17 @@
         top: 480px;
         left: 35%;
         font-size: 40px;
+      }
+      .cardm {
+        height: 100px;
+        width: 80%;
+        background-color: grey;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #000;
+        /*   margin-left: -50px; */
+        transition: 0.4s ease-out;
+        user-select: none;
+        color: yellow;
       }
 
       .card {
@@ -161,7 +184,7 @@
           <a href="about/" style="text-decoration: none;">Learn more</a>
         </div>
       </div>
-      <div class="card">
+      <div id="card1" class="card">
         <h3 class="title">Services</h3>
         <div class="text-container">
           Our web application and static websites are a model of quality and
