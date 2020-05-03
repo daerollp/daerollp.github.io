@@ -13,15 +13,16 @@
 
     <style>
         body {
-            background-color: #100e17;
+            
             font-family: 'Open Sans', sans-serif;
+            
         }
 
         .container {
             position: absolute;
             height: 300px;
             width: 600px;
-            top: 150px;
+            top: 200px;
             left: calc(50% - 300px);
             display: flex;
         }
@@ -34,11 +35,20 @@
             display: flex;
         }
         
+        .heading{
+            color: white;
+            font-family: comfortaa;
+            position: absolute;
+            top: 480px;
+            left: 35%;
+            font-size: 40px
+        }
+        
         
 
         .card {
             display: flex;
-            height: 280px;
+            height: 230px;
             width: 200px;
             background-color: #17141d;
             border-radius: 10px;
@@ -84,6 +94,60 @@
             user-select: none;
 
         }
+        .button-large1{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            top: 550px;
+            left: 10%;
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+            font-family: comfortaa;
+            border-radius: 50px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+        .button-large2{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            top: 550px;
+            left: 40%;
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+            font-family: comfortaa;
+            border-radius: 50px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+        .button-large3{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            top: 550px;
+            left: 70%;
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+            font-family: comfortaa;
+            border-radius: 50px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+        .button-large1:hover{
+            box-shadow: -1rem 0 3rem #000;
+        }
+        .button-large2:hover{
+            box-shadow: -1rem 0 3rem #000;
+        }
+        .button-large3:hover{
+            box-shadow: -1rem 0 3rem #000;
+        }
+        .footer{
+            position: absolute;
+            top: 680px;
+            height: 50px;
+            color: white;
+            font-family: comfortaa;
+            text-align: center;
+            left: 35%;
+        }
 
     </style>
 </head>
@@ -98,21 +162,21 @@
         <div class="card">
             <h3 class="title">About</h3>
             <div class="text-container">Daero is a team of hardworking people, dedicated to quality
-                <br><br><br><br><br><br><br>
+                <br><br><br><br>
                 <a href="about/" style="text-decoration:none;">Learn more</a>
             </div>
         </div>
         <div class="card">
             <h3 class="title">Services</h3>
             <div class="text-container">Our web application and static websites are a model of quality and immense hardwork.
-                <br><br><br><br><br>
+                <br><br>
                 <a href="services/" style="text-decoration:none;">Learn more</a>
             </div>
         </div>
         <div class="card">
             <h3 class="title">Team</h3>
             <div class="text-container">We have a great team who are always in search of something awesome and create something WOW!
-                <br><br><br><br>
+                <br>
                 <a href="team/" style="text-decoration:none;">Learn more</a>
             </div>
 
@@ -120,14 +184,17 @@
         <div class="card">
             <h3 class="title">Contact</h3>
             <div class="text-container">Get in touch with our team with only few clicks.
-                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br>
                 <a href="contact/" style="text-decoration:none;">Learn more</a>
             </div>
         </div>
     </div>
-
-
-
+<div class="heading">Some of our live works</div>
+<div class="button-large1"><br><b>Imagination to Innovation</b><br><br>Students Club Management web application</div>
+<div class="button-large2"><br><b>We Share</b><br><br>Online Public charity platform</div>
+    <div class="button-large3"><br><b>dquiz</b><br><br>Quiz application for conducting quiz events</div>
+    <br><br><br>
+    <div class="footer">Copyright &copy; 2018-2020 Daero. All rights reserved.</div>
 </body>
 
 </html>
