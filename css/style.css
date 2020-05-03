@@ -5,11 +5,11 @@ html {
   box-sizing: border-box;
 }
 @font-face {
-  src: url("../fonts/google/google_sans.ttf");
+  src: url("https://daero.wtf/fonts/google/google_sans.ttf");
   font-family: google_sans;
 }
 @font-face {
-  src: url("../fonts/comfortaa/comfortaa.ttf");
+  src: url("https://daero.wtf/fonts/comfortaa/comfortaa.ttf");
   font-family: comfortaa;
 }
 body,
@@ -41,7 +41,7 @@ a:hover {
 }
 .page-title {
   text-align: center;
-  font-family: google sans;
+  font-family: google_sans;
   font-size: 50px;
 }
 .text {
@@ -52,7 +52,7 @@ a:hover {
 td {
   color: white;
   font-size: 20px;
-  font-family: google sans;
+  font-family: google_sans;
 }
 .daero_title {
   padding-left: 4px;
@@ -73,10 +73,10 @@ td {
   td {
     color: white;
     font-size: 17px;
-    font-family: google sans;
+    font-family: google_sans;
   }
   .daero_title {
-    padding-left: 10px;
+    padding-left: 4px;
     color: #ffffff;
     font-size: 25px;
     font-family: comfortaa;
