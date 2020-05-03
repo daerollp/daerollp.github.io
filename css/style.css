@@ -17,11 +17,20 @@ html {
   margin: 0;
   background-color: #212121;
 }
+
+.content {
+  font-size: 20px;
+  font-family: google_sans;
+  color: white;
+  width: 90%;
+  text-align: center;
+}
 .nav {
   font-family: comfortaa;
   overflow: hidden;
   background: #000000;
-  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: fixed;
   width: 100%;
   color: white;
