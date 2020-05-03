@@ -49,9 +49,7 @@ a:hover {
   margin-right: 10%;
 }
 .page-title {
-  text-align: center;
-  font-family: google_sans;
-  font-size: 50px;
+  font-size: 30px;
 }
 .text {
   font-size: 50px;
@@ -60,13 +58,13 @@ a:hover {
 }
 td {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   font-family: google_sans;
 }
 .daero_title {
   padding-left: 4px;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   font-family: comfortaa;
 }
 .container-l {
@@ -74,20 +72,4 @@ td {
 }
 .container-r {
   text-align: justify;
-}
-@media only screen and (max-width: 720px) {
-  .page-title {
-    font-size: 30px;
-  }
-  td {
-    color: white;
-    font-size: 17px;
-    font-family: google_sans;
-  }
-  .daero_title {
-    padding-left: 4px;
-    color: #ffffff;
-    font-size: 25px;
-    font-family: comfortaa;
-  }
 }
