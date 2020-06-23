@@ -18,12 +18,20 @@ html {
   background-color: #212121;
 }
 
-.menu{
-  float: right;
-  margin-right: 20px;
-  color: white;
+.capsule{
+  width: auto;
+  height: 20px;
+  border-radius: 30px;
+  text-align: center;
+  color: black;
   font-family: comfortaa;
-  font-size: 20px;
+  padding: 15px;
+  font-size: 15px;
+  float: right;
+  margin-right: 30px;
+  backdrop-filter: saturate(180%) blur(10px);
+background-color: rgba(255,255,255,.72);
+  
 }
 
 .content {
