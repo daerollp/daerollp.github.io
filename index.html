@@ -47,6 +47,87 @@ function scrollFunction() {
       body {
         font-family: "Open Sans", sans-serif;
       }
+       @-webkit-keyframes dim {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d90429,
+            0 0 40px #a0989c, 0 0 50px #d90429, 0 0 60px #d90429,
+            0 0 70px #d90429;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ef233c, 0 0 40px #ef233c,
+            0 0 50px #ef233c, 0 0 60px #ef233c, 0 0 70px #ef233c,
+            0 0 80px #ef233c;
+        }
+      }
+      .glow {
+        animation: dim 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #ef233c;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+      }
+      @-webkit-keyframes dim2 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03256c,
+            0 0 40px #a0989c, 0 0 50px #03256c, 0 0 60px #03256c,
+            0 0 70px #03256c;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #2541b2, 0 0 40px #2541b2,
+            0 0 50px #2541b2, 0 0 60px #2541b2, 0 0 70px #2541b2,
+            0 0 80px #2541b2;
+        }
+      }
+      .glow2 {
+        animation: dim2 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #2541b2;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+      }
+      @-webkit-keyframes dim3 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #55a630,
+            0 0 40px #a0989c, 0 0 50px #55a630, 0 0 60px #55a630,
+            0 0 70px #55a630;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #80b918, 0 0 40px #80b918,
+            0 0 50px #80b918, 0 0 60px #80b918, 0 0 70px #80b918,
+            0 0 80px #80b918;
+        }
+      }
+      .glow3 {
+        animation: dim3 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #80b918;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+      }
 
       .container {
         position: absolute;
@@ -282,7 +363,7 @@ function scrollFunction() {
       <div class="large-div-description-l">
         Sky rocket your business with our custom made web applications, tailored as per your needs.
         <br><br>
-        <button class="damn-cool-button">Our Plans and Pricing</button>
+        <button class="glow3">Our Plans and Pricing</button>
       </div>
       <div class="animated-spirit-r">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -294,7 +375,7 @@ function scrollFunction() {
       <div class="large-div-description-r">
         Strong and robust backend logic that always does it's job right.
         <br><br>
-        <button class="damn-cool-button">Know how we build</button>
+        <button class="glow2">Know how we build</button>
       </div>
       <div class="animated-spirit-l">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -306,7 +387,8 @@ function scrollFunction() {
       <div class="large-div-description-l">
         Superior customer support and maintainance service. A complete peace of mind 😊.
         <br><br>
-        <button class="damn-cool-button">Know about our support policies</button>
+        <button class="glow">Know about our support policies</button>
+        <br><br>
       </div>
       <div class="animated-spirit-r">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
