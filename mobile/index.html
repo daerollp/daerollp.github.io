@@ -8,6 +8,42 @@
     <meta name="author" content="DAERO" />
     <title>Daero</title>
     <style>
+      body,
+      html {
+        margin: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      @font-face {
+        src: url("https://daero.wtf/fonts/google/google_sans.ttf");
+        font-family: google_sans;
+      }
+      @font-face {
+        src: url("https://daero.wtf/fonts/comfortaa/comfortaa.ttf");
+        font-family: comfortaa;
+      }
+      body,
+      html {
+        margin: 0;
+        background-color: #212121;
+      }
+
+      .capsule {
+        width: auto;
+        height: 20px;
+        border-radius: 30px;
+        text-align: center;
+        color: white;
+        font-family: comfortaa;
+        padding: 15px;
+        font-size: 15px;
+        float: right;
+        margin-right: 30px;
+        backdrop-filter: saturate(180%) blur(10px);
+        background-color: rgba(255, 255, 255, 0.2);
+        display: none;
+      }
+
       .content {
         font-size: 20px;
         font-family: google_sans;
@@ -15,6 +51,59 @@
         width: 90%;
         height: 100%;
         text-align: center;
+      }
+      .nav {
+        font-family: comfortaa;
+        overflow: hidden;
+        background: #212121;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: fixed;
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 80px;
+        z-index: 1;
+        transition: 1s ease;
+        backdrop-filter: saturate(180%) blur(10px);
+        background-color: #212121;
+      }
+      .nav a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        cursor: pointer;
+      }
+      #main {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .page-title {
+        font-size: 30px;
+      }
+      .text {
+        font-size: 50px;
+        font-family: comfortaa;
+        text-align: center;
+      }
+      td {
+        color: white;
+        font-size: 17px;
+        font-family: google_sans;
+      }
+      .daero_title {
+        padding-left: 4px;
+        color: #ffffff;
+        font-size: 25px;
+        font-family: comfortaa;
+      }
+      .container-l {
+        text-align: justify;
+      }
+      .container-r {
+        text-align: justify;
       }
     </style>
   </head>
