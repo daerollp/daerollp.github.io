@@ -18,10 +18,15 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("navbar").style.fontSize = "40px";
     document.getElementById("navbar").style.backgroundColor="rgba(8, 8, 8, 0.60)";
+    document.getElementById("cap").style.display="block";
+    document.getElementById("navbar").style.textAlign="left";
+    document.getElementById("navbar").style.paddingLeft="20px";
   } else {
     document.getElementById("navbar").style.fontSize = "80px";
     document.getElementById("navbar").style.backgroundColor="#212121";
     document.getElementById("navbar").style.boxShadow="none";
+    document.getElementById("navbar").style.textAlign="center";
+    document.getElementById("cap").style.display="none";
   }
 }
     </script>
@@ -219,7 +224,7 @@ function scrollFunction() {
       }
       .footer {
         position: absolute;
-        top: 680px;
+        top: 2500px;
         height: 50px;
         color: white;
         font-family: comfortaa;
@@ -231,7 +236,7 @@ function scrollFunction() {
 
   <body>
     <div class="nav" id="navbar">
-      <b>Daero</b>
+      <b>Daero</b><div class="capsule" id="cap">Products   &nbsp;&nbsp;&nbsp; Pricing &nbsp;&nbsp;&nbsp;   Benefits  &nbsp;&nbsp;&nbsp;  Docs  &nbsp;&nbsp;&nbsp;  Team &nbsp;&nbsp;&nbsp;   Contact us</div>
     </div>
     <center><br><br><br><br>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -308,20 +313,10 @@ function scrollFunction() {
 <lottie-player src="https://assets8.lottiefiles.com/datafiles/6WfDdm3ooQTEs1L/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
       </div>
     </div>
-    <!-- <div class="heading">Some of our live works</div>
-    <div class="button-large1">
-      <br /><b>Imagination to Innovation</b><br /><br />Students Club Management
-      web application
-    </div>
-    <div class="button-large2">
-      <br /><b>We Share</b><br /><br />Online Public charity platform
-    </div>
-    <div class="button-large3">
-      <br /><b>dquiz</b><br /><br />Quiz application for conducting quiz events
-    </div>
-    <br /><br /><br />
+    
     <div class="footer">
       Copyright &copy; 2018-2020 Daero. All rights reserved.
-    </div> -->
+    </div> 
+    <br><br><br>
   </body>
 </html>
