@@ -28,14 +28,15 @@ html {
 .nav {
   font-family: comfortaa;
   overflow: hidden;
-  background: #000000;
+  background: #212121;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
   width: 100%;
   color: white;
-  font-size: 40px;
+  font-size: 80px;
   z-index: 1;
+  transition: 1s ease;
 }
 .nav a {
   color: #ffffff;
