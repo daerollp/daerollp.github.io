@@ -35,6 +35,7 @@ html {
   width: 100%;
   color: white;
   font-size: 40px;
+  z-index: 1;
 }
 .nav a {
   color: #ffffff;
