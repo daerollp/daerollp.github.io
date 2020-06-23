@@ -11,6 +11,21 @@
         window.location.href = "mobile";
       }
     </script>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "40px";
+    document.getElementById("navbar").style.backgroundColor="#000000";
+    document.getElementById("navbar").style.boxShadow="-1rem 0 3rem skyblue";
+  } else {
+    document.getElementById("navbar").style.fontSize = "80px";
+    document.getElementById("navbar").style.backgroundColor="#212121";
+    document.getElementById("navbar").style.boxShadow="none";
+  }
+}
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="We are Daero" />
@@ -185,7 +200,7 @@
         margin-right: 100px;
         color: white;
         font-size: 50px;
-        font-family:comfortaa;
+        font-family: comfortaa;
         width: 600px;
         height: auto;
         padding-top: 40px;
@@ -198,7 +213,7 @@
         margin-left: 100px;
         color: white;
         font-size: 50px;
-        font-family:comfortaa;
+        font-family: comfortaa;
         width: 600px;
         height: auto;
         padding-top: 40px;
@@ -216,7 +231,7 @@
   </head>
 
   <body>
-    <div class="nav">
+    <div class="nav" id="navbar">
       <center><b>Daero</b></center>
     </div>
     <center><br><br><br><br>
@@ -275,11 +290,23 @@
       <div class="large-div-description-r">
         Strong and robust backend logic that always does it's job right.
         <br><br>
-        <button class="damn-cool-button" style="background-color:pink;">Know how we build</button>
+        <button class="damn-cool-button">Know how we build</button>
       </div>
       <div class="animated-spirit-l">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wMF4Pq.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="large-div" style="margin-top: 400px;">
+      <div class="large-div-description-l">
+        Superior customer support and maintainance service. A complete peace of mind 😊.
+        <br><br>
+        <button class="damn-cool-button">Know about our support policies</button>
+      </div>
+      <div class="animated-spirit-r">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets8.lottiefiles.com/datafiles/6WfDdm3ooQTEs1L/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
       </div>
     </div>
     <!-- <div class="heading">Some of our live works</div>
