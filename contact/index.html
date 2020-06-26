@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        window.location.href = "../mobile";
+      }
+    </script>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "40px";
+    document.getElementById("navbar").style.backgroundColor="rgba(8, 8, 8, 0.60)";
+    document.getElementById("cap").style.display="block";
+    document.getElementById("navbar").style.textAlign="left";
+    document.getElementById("navbar").style.paddingLeft="20px";
+    document.getElementById("heading").innerHTML = "Products";
+  } else {
+    document.getElementById("navbar").style.fontSize = "80px";
+    document.getElementById("navbar").style.backgroundColor="#212121";
+    document.getElementById("navbar").style.boxShadow="none";
+    document.getElementById("navbar").style.textAlign="center";
+    document.getElementById("cap").style.display="none";
+    document.getElementById("heading").innerHTML = "Daero";
+  }
+}
+$('.buy').click(function(){
+  $('.bottom').addClass("clicked");
+});
+
+$('.remove').click(function(){
+  $('.bottom').removeClass("clicked");
+});
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="We are Daero" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="DAERO" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400"
+      rel="stylesheet"
+    />
+    <title>Daero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+       @-webkit-keyframes dim {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d90429,
+            0 0 40px #a0989c, 0 0 50px #d90429, 0 0 60px #d90429,
+            0 0 70px #d90429;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ef233c, 0 0 40px #ef233c,
+            0 0 50px #ef233c, 0 0 60px #ef233c, 0 0 70px #ef233c,
+            0 0 80px #ef233c;
+        }
+      }
+      .glow {
+        animation: dim 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #ef233c;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+        transition: 0.2s ease;
+        border-radius: 35px;
+      }
+      .glow:hover{
+        background-color:#ef233c ;
+        cursor:pointer;
+      }
+      @-webkit-keyframes dim2 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03256c,
+            0 0 40px #a0989c, 0 0 50px #03256c, 0 0 60px #03256c,
+            0 0 70px #03256c;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #2541b2, 0 0 40px #2541b2,
+            0 0 50px #2541b2, 0 0 60px #2541b2, 0 0 70px #2541b2,
+            0 0 80px #2541b2;
+        }
+      }
+      .glow2 {
+        animation: dim2 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #2541b2;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+        transition: 0.2s ease;
+        border-radius: 35px;
+      }
+      .glow2:hover{
+        background-color:#2541b2 ;
+        cursor:pointer;
+      }
+      @-webkit-keyframes dim3 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #55a630,
+            0 0 40px #a0989c, 0 0 50px #55a630, 0 0 60px #55a630,
+            0 0 70px #55a630;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #80b918, 0 0 40px #80b918,
+            0 0 50px #80b918, 0 0 60px #80b918, 0 0 70px #80b918,
+            0 0 80px #80b918;
+        }
+      }
+      .glow3 {
+        animation: dim3 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #80b918;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+        transition: 0.2s ease;
+        border-radius: 35px;
+      }
+      .glow3:hover{
+        background-color:#80b918 ;
+        cursor:pointer;
+      }
+
+      .container {
+        position: absolute;
+        height: 300px;
+        width: 600px;
+        top: 400px;
+        left: calc(50% - 300px);
+        display: flex;
+      }
+      .container-big {
+        position: absolute;
+        height: 600px;
+        width: 600px;
+        top: 50px;
+        left: calc(50% - 300px);
+        display: flex;
+      }
+
+      .heading {
+        color: white;
+        font-family: comfortaa;
+        position: absolute;
+        top: 480px;
+        left: 35%;
+        font-size: 40px;
+      }
+      /* .cardm {
+        height: 100px;
+        width: 80%;
+        background-color: grey;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #000;
+          margin-left: -50px;
+        transition: 0.4s ease-out;
+        user-select: none;
+        color: yellow;
+      } 
+      */
+
+      .card {
+        display: flex;
+        height: 230px;
+        width: 200px;
+        background-color: #17141d;
+        border-radius: 10px;
+        box-shadow: -1rem 0 3rem #000;
+        /*   margin-left: -50px; */
+        transition: 0.4s ease-out;
+        position: relative;
+        left: 0px;
+        user-select: none;
+      }
+
+      .card:not(:first-child) {
+        margin-left: -50px;
+      }
+
+      .card:hover {
+        transform: translateY(-20px);
+        transition: 0.4s ease-out;
+      }
+
+      .card:hover ~ .card {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+      }
+
+      .title {
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-family: comfortaa;
+      }
+
+      .text-container {
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+        font-family: comfortaa;
+        user-select: none;
+      }
+      .button-large1 {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 550px;
+        left: 10%;
+        background: linear-gradient(to right, #3494e6, #ec6ead);
+        font-family: comfortaa;
+        border-radius: 50px;
+        text-align: center;
+        transition: 0.3s ease;
+      }
+      .button-large2 {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 550px;
+        left: 40%;
+        background: linear-gradient(to right, #3494e6, #ec6ead);
+        font-family: comfortaa;
+        border-radius: 50px;
+        text-align: center;
+        transition: 0.3s ease;
+      }
+      .button-large3 {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 550px;
+        left: 70%;
+        background: linear-gradient(to right, #3494e6, #ec6ead);
+        font-family: comfortaa;
+        border-radius: 50px;
+        text-align: center;
+        transition: 0.3s ease;
+      }
+      .button-large1:hover {
+        box-shadow: -1rem 0 3rem #000;
+      }
+      .button-large2:hover {
+        box-shadow: -1rem 0 3rem #000;
+      }
+      .button-large3:hover {
+        box-shadow: -1rem 0 3rem #000;
+      }
+
+      .large-div{
+        width: 100%;
+        height: auto;
+      }
+      .animated-spirit-l{
+        float: left;
+        margin-left: 10px;
+      }
+      .damn-cool-button{
+        width: 800px;
+        height: auto;
+        background-color: rgba(46, 153, 224, 0.1);
+        color: white;
+        font-size: 40px;
+        margin: 0 auto;
+        border-radius: 40px;
+        font-family: comfortaa;
+        padding: 20px;
+      }
+      .large-div-description-r{
+        float: right;
+        margin-right: 100px;
+        color: white;
+        font-size: 50px;
+        font-family: comfortaa;
+        width: 600px;
+        height: auto;
+        padding-top: 40px;
+      }
+      .animated-spirit-r{
+        float: right;
+      }
+      .large-div-description-l{
+        float: left;
+        margin-left: 100px;
+        color: white;
+        font-size: 50px;
+        font-family: comfortaa;
+        width: 600px;
+        height: auto;
+        padding-top: 40px;
+      }
+      .footer {
+        position: absolute;
+        top: 1500px;
+        height: 50px;
+        color: white;
+        font-size: 12px;
+        font-family: comfortaa;
+        text-align: center;
+        width: 98%;
+        left: 1%;
+        text-align: center;
+        padding-top: 30px;
+        border-top: 0.5px solid rgb(94, 94, 94);
+      }
+      .wrapper {
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+}
+
+.wrapper:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .container {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .container .top {
+  height: 100%;
+  width: 100%;
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg) no-repeat center center;
+  background-size: 100%;
+}
+
+.wrapper .container .bottom {
+  width: 200%;
+  height: 20%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.wrapper .container .bottom.clicked {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .container .bottom h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .container .bottom p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .container .bottom .left {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+
+.wrapper .container .bottom .left .details {
+  padding: 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+
+.wrapper .container .bottom .left .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .container .bottom .left .buy i {
+  font-size: 30px;
+  padding: 30px;
+  color: #254053;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.wrapper .container .bottom .left .buy:hover {
+  background: #A6CDDE;
+}
+
+.wrapper .container .bottom .left .buy:hover i {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  color: #00394B;
+}
+
+.wrapper .container .bottom .right {
+  width: 50%;
+  background: #A6CDDE;
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+
+.wrapper .container .bottom .right .details {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+
+.wrapper .container .bottom .right .done {
+  width: calc(30% - 2px);
+  float: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+}
+
+.wrapper .container .bottom .right .done i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.wrapper .container .bottom .right .remove {
+  width: calc(30% - 1px);
+  clear: both;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+  background: #BC3B59;
+  -webkit-transition: background 0.5s, -webkit-transform 0.5s;
+  transition: background 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, background 0.5s;
+  transition: transform 0.5s, background 0.5s, -webkit-transform 0.5s;
+}
+
+.wrapper .container .bottom .right .remove:hover {
+  background: #9B2847;
+}
+
+.wrapper .container .bottom .right .remove:hover i {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.wrapper .container .bottom .right .remove i {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.wrapper .container .bottom .right:hover .remove, .wrapper .container .bottom .right:hover .done {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.wrapper .inside {
+  z-index: 9;
+  background: #92879b77;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  -webkit-transition: all 0.5s, border-radius 2s, top 1s;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+
+.wrapper .inside .icon {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+
+.wrapper .inside:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+
+.wrapper .inside:hover .icon {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+
+.wrapper .inside:hover .contents {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.wrapper .inside .contents {
+  padding: 5%;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.8s;
+  transition: opacity 0.2s, -webkit-transform 0.8s;
+  transition: opacity 0.2s, transform 0.8s;
+  transition: opacity 0.2s, transform 0.8s, -webkit-transform 0.8s;
+}
+
+.wrapper .inside .contents table {
+  text-align: left;
+  width: 100%;
+}
+
+.wrapper .inside .contents h1, .wrapper .inside .contents p, .wrapper .inside .contents table {
+  color: white;
+}
+
+.wrapper .inside .contents p {
+  font-size: 13px;
+}
+/*# sourceMappingURL=style1.css.map */
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="nav" id="navbar">
+      <span id="heading">Daero</span></b><div class="capsule" id="cap">Products   &nbsp;&nbsp;&nbsp; Pricing &nbsp;&nbsp;&nbsp;   Benefits  &nbsp;&nbsp;&nbsp;  Docs  &nbsp;&nbsp;&nbsp;  Team &nbsp;&nbsp;&nbsp;   Contact us</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="master-container">
+      <div class="wrapper" style="float: left;margin-left: 6%; padding: 20px;">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_Hli97R.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+      <font face="comfortaa" size=5>Graphic Design</font> 
+       <br><br> We can make a static web site that would look pretty good. Guaranteed to be super damn cool.
+<div class="inside" style="backdrop-filter: saturate(180%) blur(10px);background-color: #92879b77;">
+          <div class="icon"><i class="material-icons">more</i></div>
+          <div class="contents" style="background-color: #ffffff00;font-family: comfortaa;">
+           Static website service description. There are various things that you can buy.
+          </div>
+        </div>
+      </div>
+        </div>
+    <div class="footer">
+      &copy; 2018-2020 Daero. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documents&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter
+    </div> 
+    <br><br><br>
+  </body>
+</html>
