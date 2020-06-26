@@ -12,23 +12,29 @@
       }
     </script>
     <script>
-      window.onscroll = function() {scrollFunction()};
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.fontSize = "40px";
-    document.getElementById("navbar").style.backgroundColor="rgba(8, 8, 8, 0.60)";
-    document.getElementById("cap").style.display="block";
-    document.getElementById("navbar").style.textAlign="left";
-    document.getElementById("navbar").style.paddingLeft="20px";
-  } else {
-    document.getElementById("navbar").style.fontSize = "80px";
-    document.getElementById("navbar").style.backgroundColor="#212121";
-    document.getElementById("navbar").style.boxShadow="none";
-    document.getElementById("navbar").style.textAlign="center";
-    document.getElementById("cap").style.display="none";
-  }
-}
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          document.getElementById("navbar").style.fontSize = "40px";
+          document.getElementById("navbar").style.backgroundColor =
+            "rgba(8, 8, 8, 0.60)";
+          document.getElementById("cap").style.display = "block";
+          document.getElementById("navbar").style.textAlign = "left";
+          document.getElementById("navbar").style.paddingLeft = "20px";
+        } else {
+          document.getElementById("navbar").style.fontSize = "80px";
+          document.getElementById("navbar").style.backgroundColor = "#212121";
+          document.getElementById("navbar").style.boxShadow = "none";
+          document.getElementById("navbar").style.textAlign = "center";
+          document.getElementById("cap").style.display = "none";
+        }
+      }
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -44,15 +50,15 @@ function scrollFunction() {
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
-        a{
-            text-decoration:none;
-            color:white;
-            cursor:focus;
-        }
+      a {
+        text-decoration: none;
+        color: white;
+        cursor: focus;
+      }
       body {
         font-family: "Open Sans", sans-serif;
       }
-       @-webkit-keyframes dim {
+      @-webkit-keyframes dim {
         from {
           text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d90429,
             0 0 40px #a0989c, 0 0 50px #d90429, 0 0 60px #d90429,
@@ -81,9 +87,9 @@ function scrollFunction() {
         transition: 0.2s ease;
         border-radius: 35px;
       }
-      .glow:hover{
-        background-color:#ef233c ;
-        cursor:pointer;
+      .glow:hover {
+        background-color: #ef233c;
+        cursor: pointer;
       }
       @-webkit-keyframes dim2 {
         from {
@@ -114,9 +120,9 @@ function scrollFunction() {
         transition: 0.2s ease;
         border-radius: 35px;
       }
-      .glow2:hover{
-        background-color:#2541b2 ;
-        cursor:pointer;
+      .glow2:hover {
+        background-color: #2541b2;
+        cursor: pointer;
       }
       @-webkit-keyframes dim3 {
         from {
@@ -147,9 +153,9 @@ function scrollFunction() {
         transition: 0.2s ease;
         border-radius: 35px;
       }
-      .glow3:hover{
-        background-color:#80b918 ;
-        cursor:pointer;
+      .glow3:hover {
+        background-color: #80b918;
+        cursor: pointer;
       }
 
       .container {
@@ -191,7 +197,7 @@ function scrollFunction() {
       */
 
       .card {
-        display: flex; 
+        display: flex;
         height: 230px;
         width: 200px;
         background-color: #17141d;
@@ -283,15 +289,15 @@ function scrollFunction() {
         box-shadow: -1rem 0 3rem #000;
       }
 
-      .large-div{
+      .large-div {
         width: 100%;
         height: auto;
       }
-      .animated-spirit-l{
+      .animated-spirit-l {
         float: left;
         margin-left: 10px;
       }
-      .damn-cool-button{
+      .damn-cool-button {
         width: 800px;
         height: auto;
         background-color: rgba(46, 153, 224, 0.1);
@@ -302,7 +308,7 @@ function scrollFunction() {
         font-family: comfortaa;
         padding: 20px;
       }
-      .large-div-description-r{
+      .large-div-description-r {
         float: right;
         margin-right: 100px;
         color: white;
@@ -312,10 +318,10 @@ function scrollFunction() {
         height: auto;
         padding-top: 40px;
       }
-      .animated-spirit-r{
+      .animated-spirit-r {
         float: right;
       }
-      .large-div-description-l{
+      .large-div-description-l {
         float: left;
         margin-left: 100px;
         color: white;
@@ -340,20 +346,32 @@ function scrollFunction() {
         border-top: 0.5px solid rgb(94, 94, 94);
       }
 
-      .contact-card{
-
+      .contact-card {
       }
     </style>
   </head>
 
   <body>
     <div class="nav" id="navbar">
-      <b>Daero</b><div class="capsule" id="cap"><a href="products/index.html">Products</a>   &nbsp;&nbsp;&nbsp; Pricing &nbsp;&nbsp;&nbsp;   Benefits  &nbsp;&nbsp;&nbsp;  Docs  &nbsp;&nbsp;&nbsp;  Team &nbsp;&nbsp;&nbsp;   Contact us</div>
+      <b>Daero</b>
+      <div class="capsule" id="cap">
+        <a href="products/">Products</a> &nbsp;&nbsp;&nbsp; Pricing
+        &nbsp;&nbsp;&nbsp; Benefits &nbsp;&nbsp;&nbsp; Docs &nbsp;&nbsp;&nbsp;
+        Team &nbsp;&nbsp;&nbsp; Contact us
+      </div>
     </div>
-    <center><br><br><br><br>
+    <center>
+      <br /><br /><br /><br />
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_BX96aR.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>   
-</center>
+      <lottie-player
+        src="https://assets8.lottiefiles.com/private_files/lf30_BX96aR.json"
+        background="transparent"
+        speed="1"
+        style="width: 500px; height: 500px;"
+        loop
+        autoplay
+      ></lottie-player>
+    </center>
     <div class="container">
       <div class="card">
         <h3 class="title">About</h3>
@@ -389,76 +407,140 @@ function scrollFunction() {
         </div>
       </div>
     </div>
-  
+
     <div class="large-div" style="margin-top: 200px;">
       <div class="large-div-description-l">
-        Sky rocket your business with our custom made web applications, tailored as per your needs.
-        <br><br>
+        Sky rocket your business with our custom made web applications, tailored
+        as per your needs.
+        <br /><br />
         <button class="glow3">Our Plans and Pricing</button>
       </div>
       <div class="animated-spirit-r">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_1Uj5JP.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+        <lottie-player
+          src="https://assets7.lottiefiles.com/packages/lf20_1Uj5JP.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px;"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br />
     <div class="large-div" style="margin-top: 400px;">
       <div class="large-div-description-r">
         Strong and robust backend logic that always does it's job right.
-        <br><br>
+        <br /><br />
         <button class="glow2">Know how we build</button>
       </div>
       <div class="animated-spirit-l">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wMF4Pq.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+        <lottie-player
+          src="https://assets3.lottiefiles.com/packages/lf20_wMF4Pq.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px;"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br />
     <div class="large-div" style="margin-top: 400px;">
       <div class="large-div-description-l">
-        Superior customer support and maintainance service. A complete peace of mind 😊.
-        <br><br>
+        Superior customer support and maintainance service. A complete peace of
+        mind 😊.
+        <br /><br />
         <button class="glow">Know about our support policies</button>
-        
       </div>
       <div class="animated-spirit-r">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets8.lottiefiles.com/datafiles/6WfDdm3ooQTEs1L/data.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+        <lottie-player
+          src="https://assets8.lottiefiles.com/datafiles/6WfDdm3ooQTEs1L/data.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px;"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br />
     <div class="large-div" style="margin-top: 400px;">
       <div class="large-div-description-r">
-        We put security and privacy at first. Get secure web applications up and running for your business.
-        <br><br>
+        We put security and privacy at first. Get secure web applications up and
+        running for your business.
+        <br /><br />
         <button class="glow3">Know about our security standards</button>
       </div>
       <div class="animated-spirit-l">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_kQW6MG.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
-        </div>
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_kQW6MG.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px;"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br />
     <center>
-    <div style="width: 95%;margin-top: 400px;color:white;font-size: 20px;text-align: center;font-family: comfortaa;">
-    <br><br><div class="damn-cool-button">Organisations we have worked with</div><br><br><br><br><img src="https://cdn.jsdelivr.net/gh/itoiclub/itoi.club/assets/favicon.ico" width="60px" height="60px">
-    <br><br><br>
-  </div>
-  </center>
-  <br>
-    <br><br>
+      <div
+        style="
+          width: 95%;
+          margin-top: 400px;
+          color: white;
+          font-size: 20px;
+          text-align: center;
+          font-family: comfortaa;
+        "
+      >
+        <br /><br />
+        <div class="damn-cool-button">Organisations we have worked with</div>
+        <br /><br /><br /><br /><img
+          src="https://cdn.jsdelivr.net/gh/itoiclub/itoi.club/assets/favicon.ico"
+          width="60px"
+          height="60px"
+        />
+        <br /><br /><br />
+      </div>
+    </center>
+    <br />
+    <br /><br />
     <center>
-      <div style="color: white;font-size: 30px;font-family: comfortaa;text-align: center;">
+      <div
+        style="
+          color: white;
+          font-size: 30px;
+          font-family: comfortaa;
+          text-align: center;
+        "
+      >
         Be our next happy client 😁
       </div>
-      
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets4.lottiefiles.com/temporary_files/PH5YkW.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
-<button class="glow">Let's Schedule a meeting</button>
-</center>
+
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets4.lottiefiles.com/temporary_files/PH5YkW.json"
+        background="transparent"
+        speed="1"
+        style="width: 500px; height: 500px;"
+        loop
+        autoplay
+      ></lottie-player>
+      <button class="glow">Let's Schedule a meeting</button>
+    </center>
     <div class="footer">
-      &copy; 2018-2020 Daero. All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documents&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter
-    </div> 
-    <br><br><br>
+      &copy; 2018-2020 Daero. All rights reserved.
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of
+      services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy
+      policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documents&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact
+      Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About
+      us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter
+    </div>
+    <br /><br /><br />
   </body>
 </html>
