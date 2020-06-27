@@ -158,6 +158,40 @@
         cursor: pointer;
       }
 
+      @-webkit-keyframes dim4 {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f48c06,
+            0 0 40px #a0989c, 0 0 50px #f48c06, 0 0 60px #f48c06,
+            0 0 70px #f48c06;
+        }
+
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #faa307, 0 0 40px #faa307,
+            0 0 50px #faa307, 0 0 60px #faa307, 0 0 70px #faa307,
+            0 0 80px #faa307;
+        }
+      }
+      .glow4 {
+        animation: dim4 1s ease-in-out infinite alternate;
+        background-color: black;
+        border: 2px solid #faa307;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: comfortaa;
+        text-align: center;
+        font-weight: bold;
+        transition: 0.2s ease;
+        border-radius: 35px;
+      }
+      .glow4:hover {
+        background-color: #faa307;
+        cursor: pointer;
+      }
+
       .container {
         position: absolute;
         height: 300px;
@@ -413,7 +447,7 @@
         Sky rocket your business with our custom made web applications, tailored
         as per your needs.
         <br /><br />
-        <button class="glow3">Our Plans and Pricing</button>
+        <button class="glow4">Our Plans and Pricing</button>
       </div>
       <div class="animated-spirit-r">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
